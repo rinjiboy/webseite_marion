@@ -1,4 +1,10 @@
-function Menu () {
+import { Component } from 'react';
+
+class Menu extends Component {
+    render(){
+  // function triggerSubmenu() {
+  //   $('#triggerSub').offClick().onClick('.submenu').show();
+  // }
     return (
         <div className="menu">
           <ul>
@@ -6,7 +12,7 @@ function Menu () {
               <a href="#welcome">Willkommen</a>
             </li>
             <li>
-              <a href="#offer">Therapieangebot</a>
+              <a href="#offer" id="triggerSub">Therapieangebot</a>
             </li>
             <li>
               <a href="#price">Preise</a>
@@ -17,6 +23,7 @@ function Menu () {
           </ul>
         </div>
     )
+}
 }
 
 export default Menu;

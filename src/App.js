@@ -4,6 +4,7 @@ import Calendar from './calendar/calendar';
 import Offers from './offers/offers';
 import Prices from './price/price';
 import Menu from './menu/menu';
+import Submenu from './menu/submenu';
 
 import Titlepic from './media/IMG_0144.JPG';
 
@@ -19,6 +20,7 @@ function App() {
 
       {/* Main Section */}
       <main>
+        <Submenu/>
         <section id="welcome" className="section welcome">
           <h2>Willkommen</h2>
           <img className="titlepic" src={Titlepic} alt="Bild der Therapeutin"/>

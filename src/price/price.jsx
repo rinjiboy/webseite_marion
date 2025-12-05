@@ -1,4 +1,7 @@
-function Prices () {
+import { Component } from 'react';
+
+class Prices extends Component {
+    render(){
     return (
         <section id="price" className="section price">
     <h2>Preise</h2>
@@ -32,6 +35,7 @@ function Prices () {
       </div>
   </section>
     )
+}
 }
 
 export default Prices;
