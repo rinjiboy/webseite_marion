@@ -1,4 +1,4 @@
-import { Component } from 'react';
+ import { Component } from 'react';
 
 class Menu extends Component {
     render(){
@@ -6,7 +6,7 @@ class Menu extends Component {
   //   $('#triggerSub').offClick().onClick('.submenu').show();
   // }
     return (
-        <div className="menu">
+        <nav className="menu">
           <ul>
             <li>
               <a href="#welcome">Willkommen</a>
@@ -21,7 +21,7 @@ class Menu extends Component {
               <a href="#calendar">Termine</a>
             </li>
           </ul>
-        </div>
+        </nav>
     )
 }
 }

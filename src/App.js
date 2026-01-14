@@ -15,7 +15,7 @@ function App() {
       <header className="header">
         <h1>Psychologische Beratung Marion Gunesch</h1>
         <p>Therapie für dein inneres Gleichgewicht</p>
-        <Menu/>
+        <Menu />
       </header>
 
       {/* Main Section */}
