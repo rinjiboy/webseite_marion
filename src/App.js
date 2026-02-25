@@ -4,7 +4,7 @@ import Calendar from './calendar/calendar';
 import Offers from './offers/offers';
 import Prices from './price/price';
 import Menu from './menu/menu';
-// import Submenu from './menu/submenu';
+import Contact from './contact/contact'
 
 import Titlepic from './media/IMG_0144.JPG';
 import logo from './media/logo.JPG';
@@ -33,6 +33,8 @@ const App = () => {
   {/* <Prices /> */}
 
   <Calendar />
+
+  <Contact />
        
 
       {/* Footer */}
