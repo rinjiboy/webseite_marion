@@ -1,7 +1,7 @@
 /* Grundlegende Stile */
 :root {
-  --sonnengelb: #FFDC00;  /* Sonnengelb */
-  --tuerkis: #1ABC9C;     /* Türkis */
+  --primary: #A9957B;  /* primary */
+  --secondary: #FAF6F0;     /* Türkis */
   --white: #fff;
   --gray: #f4f4f4;
 }
@@ -21,7 +21,7 @@ body {
 
 /* Background Gradient */
 body {
-  background: linear-gradient(135deg, var(--sonnengelb), var(--tuerkis));
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   /* height: 100vh; */
   display: flex;
   flex-direction: column;
@@ -33,7 +33,8 @@ body {
 .header {
   text-align: center;
   color: var(--gray);
-  background-color: var(--tuerkis);
+  background-color: transparent;
+  /* background-color: var(--secondary); */
   padding-top: 3rem; 
   border-radius: 0.5rem;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -47,6 +48,10 @@ body {
 .header p {
   font-size: 1.2rem;
   margin-top: 10px;
+}
+
+.logo {
+  width: 500px;
 }
 
 /* Section Styles */
@@ -110,9 +115,8 @@ ul li {
   margin-top: 2rem;
   text-align:left;
   width: 100%;
-  z-index: 1000;
-  position: sticky;
 }
+
  .menu > ul {
   display:flex;
  } 
@@ -124,7 +128,7 @@ ul li {
 
 
 
-.menu a {
+.menu a, .menu li {
   color: var(--white);
   text-decoration: none;
 }
@@ -137,9 +141,29 @@ th {
 } 
 
 .submenu {
-  display:none !important;
-  z-index: 9999;
-  position:absolute;
+  position: absolute;
+    /* top: 63%; */
+    /* left: 33%; */
+    /* background: transparent; */
+    background: var(--primary);
+    list-style-type: none;
+    padding: 10px;
+    min-width: 150px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.link {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem
+}
+
+#offer {
+  position: relative;
+  cursor: pointer;
 }
 
 
@@ -163,7 +187,8 @@ th {
 
 /* Footer */
 footer {
-  background-color: var(--tuerkis);
+  background-color: transparent;
+  /* background-color: var(--secondary); */
   color: var(--white);
   text-align: center;
   padding: 30px 0;
