@@ -1,7 +1,6 @@
 import { Component } from 'react';
 
-class Offers extends Component {
-    render(){
+const Offers = () =>{
     return (
         <section id="offer" className="section therapy-offer">
     <h2>Therapieangebot</h2>
@@ -48,7 +47,6 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
         </section>
   </section>
     )
-}
 }
 
 export default Offers;

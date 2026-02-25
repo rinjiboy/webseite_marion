@@ -1,7 +1,6 @@
 import { Component } from 'react';
 
-class Prices extends Component {
-    render(){
+const Prices = () => {
     return (
       <section id="price" className="section price">
         <h2>Preise</h2>
@@ -35,7 +34,6 @@ class Prices extends Component {
         </div>
       </section>
     )
-}
 }
 
 export default Prices;

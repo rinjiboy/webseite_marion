@@ -1,7 +1,6 @@
 import { Component } from 'react';
 
-class Calendar extends Component {
-    render(){
+const Calendar = () => {
 return(
     <section id="calendar" className="section calendar">
     <h2>Termin vereinbaren</h2>
@@ -11,7 +10,6 @@ return(
     </div>
   </section>
 )
-}
 }
 
 export default Calendar;
