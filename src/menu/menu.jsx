@@ -1,29 +1,45 @@
- import { Component } from 'react';
+ import { useState } from 'react';
 
-class Menu extends Component {
-    render(){
-  // function triggerSubmenu() {
-  //   $('#triggerSub').offClick().onClick('.submenu').show();
-  // }
+const Menu = () => {
+      const [isOpen, setIsOpen] = useState(false);
     return (
         <nav className="menu">
           <ul>
             <li>
               <a href="#welcome">Willkommen</a>
             </li>
-            <li>
-              <a href="#offer" id="triggerSub">Therapieangebot</a>
+            <li id="#offer" 
+            onMouseEnter={() => setIsOpen(true)} 
+            onMouseLeave={() => setIsOpen(false)}>
+              <button className="link" >Therapieangebot & Preise {isOpen ? '▲' : '▼'} </button>
+
+              {isOpen && (
+                <ul className="submenu">
+                  <li className="submenuItem">
+                      <a href="#talk">Gesprächstherapie</a>
+                  </li>
+                  <li className="submenuItem">
+                      <a href="#behaviour">Kognitive Verhaltenstherapie</a>
+                  </li>
+                  <li className="submenuItem">
+                      <a href="#stress">Stressbewältigung</a>
+                  </li>
+                  <li className="submenuItem">
+                      <a href="#anxiety">Angstbewältigung</a>
+                  </li>
+                </ul>
+                )}
             </li>
             <li>
-              <a href="#price">Preise</a>
+              <a href="#calendar">Termin vereinbaren</a>
             </li>
             <li>
-              <a href="#calendar">Termine</a>
+              <a href="#contact">Kontakt</a>
             </li>
           </ul>
         </nav>
     )
-}
-}
+
+    }
 
 export default Menu;
