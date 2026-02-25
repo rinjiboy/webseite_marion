@@ -4,23 +4,24 @@ import Calendar from './calendar/calendar';
 import Offers from './offers/offers';
 import Prices from './price/price';
 import Menu from './menu/menu';
-import Submenu from './menu/submenu';
+// import Submenu from './menu/submenu';
 
 import Titlepic from './media/IMG_0144.JPG';
+import logo from './media/logo.JPG';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       {/* Header */}
       <header className="header">
-        <h1>Psychologische Beratung Marion Gunesch</h1>
-        <p>Therapie für dein inneres Gleichgewicht</p>
+        <img  src={logo}  className="logo"/>
+        {/* <h1>Valora</h1>
+        <p>Coaching für Selbstwert und innere Stärke</p> */}
         <Menu />
       </header>
 
       {/* Main Section */}
       <main>
-        <Submenu/>
         <section id="welcome" className="section welcome">
           <h2>Willkommen</h2>
           <img className="titlepic" src={Titlepic} alt="Bild der Therapeutin"/>
@@ -29,7 +30,7 @@ function App() {
 
   <Offers />
 
-  <Prices />
+  {/* <Prices /> */}
 
   <Calendar />
        
